@@ -1,3 +1,6 @@
+/* 不要なスタイルを削除しました */
+/* @font-faceの定義はそのままにしています */
+
 @font-face {
   font-family: "paint_ball";
   src: url('./Paintball_Beta_3.ttf')format("truetype");
@@ -30,278 +33,83 @@ a {
   margin: 0 auto;
 }
 
-.header-text{
+.header-text {
   font-family: "paint_ball";
   color: #eee;
 }
-.ikabc{
-  font-family: "paint_ball";
-}
-.ikagana{
-  font-family: "ikamodoki","ikanji";
-}
 
+.ikagana {
+  font-family: "ikamodoki", "ikanji";
+}
 
 .top-wrapper {
+  position: relative;
   padding: 180px 0 100px 0;
-  background-image: url(splash.jpg);
+  background-image: url(黒テーマ.webp);
+  background-color: black;
   background-size: cover;
-  color: rgb(254, 216, 255);
+  background-position: center;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
-
-.top-wrapper h1 {
-  opacity: 0.9;
-  font-size: 80px;
-  letter-spacing: 5px;
-}
-
-.top-wrapper p {
-  opacity: 0.9;
-  font-size: 30px;
-  margin-bottom: 40px;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
+.top-wrapper:before {
   position: absolute;
-  top: 37%;
+  content: '';
+  left: 0;
+  top: 0;
   width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
-}
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
   }
 
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
+  
+ 
+  
+  .btn-wrapper {
     text-align: center;
   }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
+  
+  .signup {
+    background-color: #ff3edc;
   }
-
-  .heading h2 {
-    font-size: 20px;
+  
+  .btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
   }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  body
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
     display: none;
   }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
-}
-
-.content-wrapper {
-  padding: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
+  
+  .content-wrapper {
+    padding: 50px;
+    background-color: rgba(57, 57, 57, 0.9); /* 背景を黒に変更 */
+  color: rgb(255, 255, 255); /* 文字色を白に変更 */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 20px auto;
-  max-width: 800px;
+  margin: 20px 10% 0 10%;
 }
 
 .social-icons {
@@ -310,11 +118,88 @@ footer {
 }
 
 .social-icons a {
-  color: #555;
+  color: rgb(255, 255, 255); /* アイコンの色を黒に変更 */
   font-size: 30px;
   margin: 0 10px;
 }
 
 .social-icons a:hover {
-  color: #239b76; /* Hover color */
+  color: #ff3edc; /* Hover color */
+}
+
+.social-icon {
+  width: 30px; /* アイコンのサイズを統一 */
+  height: auto; /* アスペクト比を維持 */
+}
+
+.background-image {
+  background-image: url('background.png');
+  background-repeat: repeat;
+}
+
+.highlight_pink{
+  color: rgb(255, 35, 207);
+}
+.highlight_cyan{
+  color: rgb(70, 241, 255);
+}
+.highlight_yellow{
+  color: rgb(255, 248, 59);
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.9); /* 背景を白に変更 */
+  color: rgb(255, 255, 255); /* 文字色を黒に変更 */
+  padding: 20px 0; /* パディングを追加 */
+}
+
+body {
+  margin: 0; /* マージンをリセット */
+  padding: 0; /* パディングをリセット */
+}
+
+.content-wrapper a:link {
+  color:rgb(70, 241, 255);
+  text-decoration: underline;
+ }
+ 
+ .content-wrapper a:visited {
+  color: rgb(255, 35, 207);
+  text-decoration: underline;
+ }
+
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 100px;
+  letter-spacing: 5px;
+}
+.top-wrapper p {
+  opacity: 0.9;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+h2{
+  font-size: 50px;
+}
+p,li{
+  font-size: 30px;
+}
+
+/* スマホ用のフォントサイズを設定 */
+@media (max-width: 768px) {
+  .top-wrapper h1 {
+    opacity: 0.9;
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+  .top-wrapper p {
+    opacity: 0.9;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 30px; /* スマホでのh2のフォントサイズ */
+  }
+  p {
+    font-size: 20px; /* スマホでのpのフォントサイズ */
+  }
 }
