@@ -201,5 +201,13 @@ p,li{
   }
   p,li {
     font-size: 20px; /* スマホでのpのフォントサイズ */
-  }
+  } .content-wrapper {
+    padding: 50px;
+    background-color: rgba(57, 57, 57, 0.9); /* 背景を黒に変更 */
+  color: rgb(255, 255, 255); /* 文字色を白に変更 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px 5% 0 5%;
+}
+
 }
