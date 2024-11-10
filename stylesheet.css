@@ -3,19 +3,19 @@
 
 @font-face {
   font-family: "paint_ball";
-  src: url('./Paintball_Beta_3.ttf')format("truetype");
+  src: url('./font/Paintball_Beta_3.ttf')format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "ikamodoki";
-  src: url('./ikamodoki1_0.ttf')format("truetype");
+  src: url('./font/ikamodoki1_0.ttf')format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "ikanji";
-  src: url('./ab3ec448c2439eaed33fcf7f31b70b33.woff2')format("truetype");
+  src: url('./font/ab3ec448c2439eaed33fcf7f31b70b33.woff2')format("truetype");
   font-display: swap;
 }
 
@@ -42,7 +42,7 @@ a {
 .top-wrapper {
   position: relative;
   padding: 180px 0 100px 0;
-  background-image: url(黒テーマ.webp);
+  background-image: url('./assets/黒テーマ.webp');
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -164,7 +164,7 @@ a {
 }
 
 .background-image {
-  background-image: url('background.png');
+  background-image: url('./assets/background.png');
   background-repeat: repeat;
 }
 
