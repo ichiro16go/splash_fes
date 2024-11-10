@@ -33,11 +33,7 @@ a {
   margin: 0 auto;
 }
 
-.header-text {
-  font-family: "paint_ball";
-  color: #eee;
-  font-size: 50px;
-}
+
 
 .ikagana {
   font-family: "ikamodoki", "ikanji","paint_ball";
@@ -224,6 +220,11 @@ p,li{
   height: 500px;
   align-items: center;
 }
+.header-text {
+  font-family: "paint_ball";
+  color: #eee;
+  font-size: 50px;
+}
 
 
 /* スマホ用のフォントサイズを設定 */
@@ -255,6 +256,11 @@ p,li{
   width: 90%;
   height: auto;
   align-items: center;
+}
+.header-text {
+  font-family: "paint_ball";
+  color: #eee;
+  font-size: 30px;
 }
 
 }
