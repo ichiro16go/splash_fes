@@ -36,6 +36,7 @@ a {
 .header-text {
   font-family: "paint_ball";
   color: #eee;
+  font-size: 50px;
 }
 
 .ikagana {
@@ -96,7 +97,38 @@ a {
     position: fixed;
     top: 0;
     z-index: 10;
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: space-between; /* 左右に要素を配置 */
+    align-items: center; /* 垂直方向に中央揃え */
+    padding: 0 15px; /* 左右のパディングを追加 */
   }
+
+  .header-right { /* 新しいクラスを追加 */
+    display: flex; /* フレックスボックスを使用 */
+    gap: 10px; /* ボタン間のスペース */
+    margin-left: auto; /* 右側に寄せるためのマージン */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .social-button { /* ソーシャルボタンのスタイル */
+    color: white; /* ボタンの色 */
+    font-size: 25px; /* ボタンのフォントサイズ */
+    text-decoration: none; /* 下線を削除 */
+    padding: 10px; /* パディングを追加 */
+    transition: color 0.3s; /* ホバー時の色変更にトランジションを追加 */
+  }
+
+  .social-button:hover { /* ホバー時のスタイル */
+    color: #ff3edc; /* デフォルトのホバー時の色 */
+  }
+
+  /* Twitterボタンのホバー時の色を指定 */
+  .social-button.fa-twitter:hover {
+    color: rgb(70, 241, 255); /* Twitterボタンのホバー時の色 */
+  }
+
   body
   .menu-icon {
     color: white;
