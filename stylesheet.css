@@ -77,9 +77,12 @@ a {
     padding: 8px 24px;
     color: white;
     display: inline-block;
-    opacity: 0.8;
+    opacity: 0.9;
     border-radius: 4px;
     text-align: center;
+    width: 250px;
+    height: auto;
+    font-size: 30px;
   }
   
   .btn:hover {
@@ -137,6 +140,7 @@ a {
   background-repeat: repeat;
 }
 
+
 .highlight_pink{
   color: rgb(255, 35, 207);
 }
@@ -183,6 +187,12 @@ h2{
 p,li{
   font-size: 30px;
 }
+.content-image{
+  width: auto;
+  height: 500px;
+  align-items: center;
+}
+
 
 /* スマホ用のフォントサイズを設定 */
 @media (max-width: 768px) {
@@ -208,6 +218,11 @@ p,li{
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 10px 5% 0 5%;
+}
+.content-image{
+  width: 90%;
+  height: auto;
+  align-items: center;
 }
 
 }
