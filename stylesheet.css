@@ -112,7 +112,7 @@ a {
     color: white; /* ボタンの色 */
     font-size: 25px; /* ボタンのフォントサイズ */
     text-decoration: none; /* 下線を削除 */
-    padding: 10px; /* パディングを追加 */
+    padding: 10px; /* パディン��を追加 */
     transition: color 0.3s; /* ホバー時の色変更にトランジションを追加 */
   }
 
@@ -225,7 +225,12 @@ p,li{
   color: #eee;
   font-size: 50px;
 }
-
+.description {
+  font-size: 22px; /* 文字サイズを調整 */
+  line-height: 1.5; /* 行間を調整 */
+  margin: 10px 0; /* 上下のマージンを追加 */
+  opacity: 0.85;
+}
 
 /* スマホ用のフォントサイズを設定 */
 @media (max-width: 768px) {
@@ -262,5 +267,24 @@ p,li{
   color: #eee;
   font-size: 30px;
 }
+.description {
+  font-size: 18px; /* 文字サイズを調整 */
+  line-height: 1.5; /* 行間を調整 */
+  margin: 10px 0; /* 上下のマージンを追加 */
+  opacity: 0.75;
+}
 
 }
+
+.image-wrapper {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: center; /* 中央揃え */
+  margin: 10px 0; /* 上下のマージンを追加 */
+}
+
+.content-image {
+  width: 45%; /* 幅を調整 */
+  height: auto; /* アスペクト比を維持 */
+  margin: 0 2.5%; /* 左右のマージンを追加 */
+}
+
