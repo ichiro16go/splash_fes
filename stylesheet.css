@@ -36,7 +36,7 @@ a {
 
 
 .ikagana {
-  font-family: "ikamodoki", "ikanji","paint_ball";
+  font-family: "ikamodoki", "ikanji", "paint_ball";
 }
 
 .top-wrapper {
@@ -49,6 +49,7 @@ a {
   color: rgb(255, 255, 255);
   text-align: center;
 }
+
 .top-wrapper:before {
   position: absolute;
   content: '';
@@ -57,87 +58,105 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  }
+}
 
-  
- 
-  
-  .btn-wrapper {
-    text-align: center;
-  }
-  
-  .signup {
-    background-color: #ff3edc;
-  }
-  
-  .btn {
-    padding: 8px 24px;
-    color: white;
-    display: inline-block;
-    opacity: 0.9;
-    border-radius: 4px;
-    text-align: center;
-    width: 250px;
-    height: auto;
-    font-size: 30px;
-  }
-  
-  .btn:hover {
-    opacity: 1;
-  }
-  
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    display: flex; /* フレックスボックスを使用 */
-    justify-content: space-between; /* 左右に要素を配置 */
-    align-items: center; /* 垂直方向に中央揃え */
-    padding: 0 15px; /* 左右のパディングを追加 */
-  }
 
-  .header-right { /* 新しいクラスを追加 */
-    display: flex; /* フレックスボックスを使用 */
-    gap: 10px; /* ボタン間のスペース */
-    margin-left: auto; /* 右側に寄せるためのマージン */
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
 
-  .social-button { /* ソーシャルボタンのスタイル */
-    color: white; /* ボタンの色 */
-    font-size: 25px; /* ボタンのフォントサイズ */
-    text-decoration: none; /* 下線を削除 */
-    padding: 10px; /* パディン��を追加 */
-    transition: color 0.3s; /* ホバー時の色変更にトランジションを追加 */
-  }
 
-  .social-button:hover { /* ホバー時のスタイル */
-    color: #ff3edc; /* デフォルトのホバー時の色 */
-  }
+.btn-wrapper {
+  text-align: center;
+}
 
-  /* Twitterボタンのホバー時の色を指定 */
-  .social-button.fa-twitter:hover {
-    color: rgb(70, 241, 255); /* Twitterボタンのホバー時の色 */
-  }
+.signup {
+  background-color: #ff3edc;
+}
 
-  body
-  .menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    display: none;
-  }
-  
-  .content-wrapper {
-    padding: 50px;
-    background-color: rgba(57, 57, 57, 0.9); /* 背景を黒に変更 */
-  color: rgb(255, 255, 255); /* 文字色を白に変更 */
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.9;
+  border-radius: 4px;
+  text-align: center;
+  width: 250px;
+  height: auto;
+  font-size: 30px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  /* フレックスボックスを使用 */
+  justify-content: space-between;
+  /* 左右に要素を配置 */
+  align-items: center;
+  /* 垂直方向に中央揃え */
+  padding: 0 15px;
+  /* 左右のパディングを追加 */
+}
+
+.header-right {
+  /* 新しいクラスを追加 */
+  display: flex;
+  /* フレックスボックスを使用 */
+  gap: 10px;
+  /* ボタン間のスペース */
+  margin-left: auto;
+  /* 右側に寄せるためのマージン */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.social-button {
+  /* ソーシャルボタンのスタイル */
+  color: white;
+  /* ボタンの色 */
+  font-size: 25px;
+  /* ボタンのフォントサイズ */
+  text-decoration: none;
+  /* 下線を削除 */
+  padding: 10px;
+  /* パディンを追加 */
+  transition: color 0.3s;
+  /* ホバー時の色変更にトランジションを追加 */
+}
+
+.social-button:hover {
+  /* ホバー時のスタイル */
+  color: #ff3edc;
+  /* デフォルトのホバー時の色 */
+}
+
+/* Twitterボタンのホバー時の色を指定 */
+.social-button.fa-twitter:hover {
+  color: rgb(70, 241, 255);
+  /* Twitterボタンのホバー時の色 */
+}
+
+body .menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+.content-wrapper {
+  padding: 50px;
+  background-color: rgba(57, 57, 57, 0.9);
+  /* 背景を黒に変更 */
+  color: rgb(255, 255, 255);
+  /* 文字色を白に変更 */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px 10% 0 10%;
@@ -149,18 +168,22 @@ a {
 }
 
 .social-icons a {
-  color: rgb(255, 255, 255); /* アイコンの色を黒に変更 */
+  color: rgb(255, 255, 255);
+  /* アイコンの色を黒に変更 */
   font-size: 30px;
   margin: 0 10px;
 }
 
 .social-icons a:hover {
-  color: #ff3edc; /* Hover color */
+  color: #ff3edc;
+  /* Hover color */
 }
 
 .social-icon {
-  width: 30px; /* アイコンのサイズを統一 */
-  height: auto; /* アスペクト比を維持 */
+  width: 30px;
+  /* アイコンのサイズを統一 */
+  height: auto;
+  /* アスペクト比を維持 */
 }
 
 .background-image {
@@ -169,66 +192,84 @@ a {
 }
 
 
-.highlight_pink{
+.highlight_pink {
   color: rgb(255, 35, 207);
 }
-.highlight_cyan{
+
+.highlight_cyan {
   color: rgb(70, 241, 255);
 }
-.highlight_yellow{
+
+.highlight_yellow {
   color: rgb(255, 248, 59);
 }
+
 footer {
-  background-color: rgba(0, 0, 0, 0.9); /* 背景を白に変更 */
-  color: rgb(255, 255, 255); /* 文字色を黒に変更 */
-  padding: 20px 0; /* パディングを追加 */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* 背景を白に変更 */
+  color: rgb(255, 255, 255);
+  /* 文字色を黒に変更 */
+  padding: 20px 0;
+  /* パディングを追加 */
 }
 
 body {
-  margin: 0; /* マージンをリセット */
-  padding: 0; /* パディングをリセット */
+  margin: 0;
+  /* マージンをリセット */
+  padding: 0;
+  /* パディングをリセット */
 }
 
 .content-wrapper a:link {
-  color:rgb(70, 241, 255);
+  color: rgb(70, 241, 255);
   text-decoration: underline;
- }
- 
- .content-wrapper a:visited {
+}
+
+.content-wrapper a:visited {
   color: rgb(255, 35, 207);
   text-decoration: underline;
- }
+}
 
 .top-wrapper h1 {
   opacity: 0.9;
   font-size: 100px;
   letter-spacing: 5px;
 }
+
 .top-wrapper p {
   opacity: 0.9;
   font-size: 50px;
   margin-bottom: 40px;
 }
-h2{
+
+h2 {
   font-size: 50px;
 }
-p,li{
+
+p,
+li {
   font-size: 30px;
 }
-.content-image{
+
+.content-image {
   width: auto;
   height: 500px;
   align-items: center;
 }
+
 .header-text {
   font-family: "paint_ball";
   color: #eee;
   font-size: 50px;
 }
+
 .description {
-  font-size: 22px; /* 文字サイズを調整 */
-  line-height: 1.5; /* 行間を調整 */
-  margin: 10px 0; /* 上下のマージンを追加 */
+  font-size: 22px;
+  /* 文字サイズを調整 */
+  line-height: 1.5;
+  /* 行間を調整 */
+  margin: 10px 0;
+  /* 上下のマージンを追加 */
   opacity: 0.85;
 }
 
@@ -239,52 +280,134 @@ p,li{
     font-size: 60px;
     letter-spacing: 5px;
   }
+
   .top-wrapper p {
     opacity: 0.9;
     font-size: 30px;
     margin-bottom: 40px;
   }
+
   h2 {
-    font-size: 30px; /* スマホでのh2のフォントサイズ */
+    font-size: 30px;
+    /* スマホでのh2のフォントサイズ */
   }
-  p,li {
-    font-size: 20px; /* スマホでのpのフォントサイズ */
-  } .content-wrapper {
+
+  p,
+  li {
+    font-size: 20px;
+    /* スマホでのpのフォントサイズ */
+  }
+
+  .content-wrapper {
     padding: 50px;
-    background-color: rgba(57, 57, 57, 0.9); /* 背景を黒に変更 */
-  color: rgb(255, 255, 255); /* 文字色を白に変更 */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 10px 5% 0 5%;
-}
-.content-image{
-  width: 90%;
-  height: auto;
-  align-items: center;
-}
-.header-text {
-  font-family: "paint_ball";
-  color: #eee;
-  font-size: 30px;
-}
-.description {
-  font-size: 18px; /* 文字サイズを調整 */
-  line-height: 1.5; /* 行間を調整 */
-  margin: 10px 0; /* 上下のマージンを追加 */
-  opacity: 0.75;
-}
+    background-color: rgba(57, 57, 57, 0.9);
+    /* 背景を黒に変更 */
+    color: rgb(255, 255, 255);
+    /* 文字色を白に変更 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 5% 0 5%;
+  }
+
+  .content-image {
+    width: 90%;
+    height: auto;
+    align-items: center;
+  }
+
+  .header-text {
+    font-family: "paint_ball";
+    color: #eee;
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 18px;
+    /* 文字サイズを調整 */
+    line-height: 1.5;
+    /* 行間を調整 */
+    margin: 10px 0;
+    /* 上下のマージンを追加 */
+    opacity: 0.75;
+  }
 
 }
 
 .image-wrapper {
-  display: flex; /* フレックスボックスを使用 */
-  justify-content: center; /* 中央揃え */
-  margin: 10px 0; /* 上下のマージンを追加 */
+  display: flex;
+  /* フレックスボックスを使用 */
+  justify-content: center;
+  /* 中央揃え */
+  margin: 10px 0;
+  /* 上下のマージンを追加 */
 }
 
 .content-image {
-  width: 45%; /* 幅を調整 */
-  height: auto; /* アスペクト比を維持 */
-  margin: 0 2.5%; /* 左右のマージンを追加 */
+  width: 45%;
+  /* 幅を調整 */
+  height: auto;
+  /* アスペクト比を維持 */
+  margin: 0 2.5%;
+  /* 左右のマージンを追加 */
 }
 
+/* ハンバーガーメニューのスタイルを追加 */
+.hamburger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.nav-menu a {
+  display: block; /* リンクをブロック要素にして幅いっぱいに */
+  text-decoration: none; /* 下線を消す */
+  color: white; /* リンクの色 */
+  padding: 10px 0; /* 上下のパディング */
+  border-bottom: 1px solid white; /* 下に白い線を引く */
+  font-size: 20px; /* フォントサイズ */
+  transition: background-color 0.3s; /* 背景色の変化にアニメーションを設定 */
+}
+
+.nav-menu a:last-child {
+  border-bottom: none; /* 最後のリンクの下線を消す */
+}
+
+.nav-menu a:hover {
+  background-color: #333; /* ホバー時の背景色を変更 */
+}
+
+/* 閉じるボタンのスタイル */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}

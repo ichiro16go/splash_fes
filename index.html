@@ -11,6 +11,10 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="icon" href="./assets/sfes_icon_square.jpg">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <style>
+   
+    /* ... 他のスタイル ... */
+  </style>
 </head>
 
 <body>
@@ -23,8 +27,19 @@
         <a href="https://x.com/splash_fes" class="social-button fa fa-twitter" aria-label="Twitter"></a>
         <a href="https://www.instagram.com/splash_festi2024/" class="social-button fa fa-instagram"
           aria-label="Instagram"></a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
       </div>
-      <span class="fa fa-bars menu-icon"></span>
+      <div class="nav-menu" id="navMenu">
+        <div class="close-button" onclick="toggleMenu()">&#10005;</div>
+        <a href="#overview" class="ikagana">概要</a>
+        <a href="#content" class="ikagana">コンテンツ</a>
+        <a href="#date" class="ikagana">日時</a>
+        <a href="#location" class="ikagana">場所</a>
+        <a href="#cost" class="ikagana">費用</a>
+        <a href="#notes" class="ikagana">注意事項</a>
+      </div>
     </div>
   </header>
   <div class="background-image">
@@ -38,12 +53,14 @@
       </div>
     </div>
     <div class="content-wrapper">
-      <h2 class="ikagana"><span class="highlight_pink">概</span>要</h2>
+      <h2 id="overview" class="ikagana"><span class="highlight_pink">概</span>要</h2>
       <p class="ikagana">取り壊し予定のマンションを、心行くまでペンキで染めてしまおう!!!</p>
 
-      <h2 class="ikagana"><span class="highlight_cyan">コ</span>ンテンツ</h2>
+      <h2 id="content" class="ikagana"><span class="highlight_cyan">コ</span>ンテンツ</h2>
       <ul class="ikagana">
-        <li><h3>部屋いっぱいに絵を描くエリア</h3></li>
+        <li>
+          <h3>部屋いっぱいに絵を描くエリア</h3>
+        </li>
         <div class="image-wrapper">
           <img src="./assets/お絵描き1.png" alt="部屋いっぱいに絵を描くエリア" class="content-image">
           <img src="./assets/WIN_20241112_19_10_26_Pro.jpg" alt="部屋いっぱいに絵を描くエリア" class="content-image">
@@ -51,29 +68,33 @@
         <p class="ikagana description">
           マンションの白い壁を大胆に使い、自分の体より大きい絵をかくことができます。友達と一緒にコラボレーションして、ユニークなアート作品を作り上げるチャンス！色とりどりのインクで、思い出に残る瞬間を形にしましょう。
         </p>
-        <li><h3>リアルスプラをするエリア</h3></li>
+        <li>
+          <h3>リアルスプラをするエリア</h3>
+        </li>
         <img src="./assets/打ち合い加工後.png" alt="リアルスプラをするエリア" class="content-image">
         <p class="ikagana description">
           ここでは、実際にスプラトゥーンの世界を体験できます！友達とチームを組んで、戦略を練りながら、リアルなインクバトルを楽しみもう！
         </p>
-        <li><h3>インクをぶちまけてストレス発散するエリア</h3></li>
+        <li>
+          <h3>インクをぶちまけてストレス発散するエリア</h3>
+        </li>
         <img src="./assets/水風船.jpg" alt="インクを水風船に入れてぶちまけることも..." class="content-image">
         <p class="ikagana description">
           ストレスを解消するための最高の場所！水風船やインクバケツを使って、思いっきり楽しんでください。友達と一緒に、思い出に残る楽しい瞬間を作りましょう。自由にぶちまけてストレス発散！！
         </p>
       </ul>
 
-      <h2 class="ikagana"><span class="highlight_yellow">日</span>時</h2>
+      <h2 id="date" class="ikagana"><span class="highlight_yellow">日</span>時</h2>
       <p class="ikagana">11/24 10:00~16:00</p>
 
-      <h2 class="ikagana"><span class="highlight_pink">場</span>所</h2>
+      <h2 id="location" class="ikagana"><span class="highlight_pink">場</span>所</h2>
       <p class="ikagana">東京都墨田区錦糸4丁目3-6<br>(<a href="https://maps.app.goo.gl/pqwvDFrRiT1gubj37"
           class="ikagana">地図はこちら</a>)</p>
 
-      <h2 class="ikagana"><span class="highlight_cyan">費</span>用</h2>
+      <h2 id="cost" class="ikagana"><span class="highlight_cyan">費</span>用</h2>
       <p class="ikagana"><span class="highlight_yellow">格安！！</span>一人2000円</p>
 
-      <h2 class="ikagana"><span class="highlight_yellow">注</span>意事項</h2>
+      <h2 id="notes" class="ikagana"><span class="highlight_yellow">注</span>意事項</h2>
       <p class="ikagana">・汚れてもいい服で来てください！</p>
     </div>
   </div>
@@ -87,6 +108,17 @@
       <a href="https://www.instagram.com/splash_festi2024/" class="fa fa-instagram"></a>
     </div>
   </footer>
+  <script>
+    // ハンバーガーメニューの表示切替を行う関数
+    function toggleMenu() {
+      var menu = document.getElementById('navMenu');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
 </body>
 
 </html>
