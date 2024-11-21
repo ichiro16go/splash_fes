@@ -337,6 +337,10 @@ li {
     z-index: 100;
   }
 
+  .signup{
+    z-index: 110;
+  }
+
 }
 
 .image-wrapper {
