@@ -65,6 +65,8 @@ a {
 
 .btn-wrapper {
   text-align: center;
+  position: relative;
+  z-index: 100;
 }
 
 .signup {
@@ -329,6 +331,10 @@ li {
     margin: 10px 0;
     /* 上下のマージンを追加 */
     opacity: 0.75;
+  }
+
+  .btn-wrapper {
+    z-index: 100;
   }
 
 }
