@@ -1,6 +1,3 @@
-/* 不要なスタイルを削除しました */
-/* @font-faceの定義はそのままにしています */
-
 @font-face {
   font-family: "paint_ball";
   src: url('./font/Paintball_Beta_3.ttf')format("truetype");
@@ -276,42 +273,61 @@ li {
 }
 
 .calucel_item video {
-  width: 100%; /* 親の幅に合わせる */
-  height: auto; /* アスペクト比を維持 */
+  width: 100%;
+  /* 親の幅に合わせる */
+  height: auto;
+  /* アスペクト比を維持 */
 }
 
 .calucel_item img {
-  width: 100%; /* 親の幅に合わせる */
-  height: auto; /* アスペクト比を維持 */
+  width: 100%;
+  /* 親の幅に合わせる */
+  height: auto;
+  /* アスペクト比を維持 */
 }
+
 .calucel_container {
   display: flex;
-  overflow-x: auto; /* 横スクロールを有効にする */
-  scroll-snap-type: x mandatory; /* スクロールスナップを有効にする */
+  overflow-x: auto;
+  /* 横スクロールを有効にする */
+  scroll-snap-type: x mandatory;
+  /* スクロールスナップを有効にする */
 }
 
 .calucel_item {
-  flex: 0 0 auto; /* アイテムを横に並べる */
-  scroll-snap-align: start; /* スクロールスナップの位置を設定 */
-  width: 100%; /* 各アイテムの幅を設定 */
-  box-sizing: border-box; /* ボックスサイズを調整 */
-  padding: 10px; /* アイテム間のスペース */
+  flex: 0 0 auto;
+  /* アイテムを横に並べる */
+  scroll-snap-align: start;
+  /* スクロールスナップの位置を設定 */
+  width: 100%;
+  /* 各アイテムの幅を設定 */
+  box-sizing: border-box;
+  /* ボックスサイズを調整 */
+  padding: 10px;
+  /* アイテム間のスペース */
 }
 
 .calucel_container::-webkit-scrollbar {
-  width: 10px; /* スクロールバーの幅 */
-  height: 10px; /* スクロールバーの高さ */
+  width: 10px;
+  /* スクロールバーの幅 */
+  height: 10px;
+  /* スクロールバーの高さ */
 }
 
 .calucel_container::-webkit-scrollbar-thumb {
-  background-color: #f80af0; /* スクロールバーの色 */
-  border-radius: 10px; /* 丸みをつける */
-  border: 3px solid #000000; /* 外側の色 */
+  background-color: #f80af0;
+  /* スクロールバーの色 */
+  border-radius: 10px;
+  /* 丸みをつける */
+  border: 3px solid #000000;
+  /* 外側の色 */
 }
 
 .calucel_container::-webkit-scrollbar-track {
-  background-color: #000000; /* トラックの色 */
-  border-radius: 10px; /* 丸みをつける */
+  background-color: #000000;
+  /* トラックの色 */
+  border-radius: 10px;
+  /* 丸みをつける */
 }
 
 /* スマホ用のフォントサイズを設定 */
@@ -376,7 +392,7 @@ li {
     z-index: 100;
   }
 
-  .signup{
+  .signup {
     z-index: 110;
   }
 
@@ -434,21 +450,29 @@ li {
 }
 
 .nav-menu a {
-  display: block; /* リンクをブロック要素にして幅いっぱいに */
-  text-decoration: none; /* 下線を消す */
-  color: white; /* リンクの色 */
-  padding: 10px 0; /* 上下のパディング */
-  border-bottom: 1px solid white; /* 下に白い線を引く */
-  font-size: 20px; /* フォントサイズ */
-  transition: background-color 0.3s; /* 背景色の変化にアニメーションを設定 */
+  display: block;
+  /* リンクをブロック要素にして幅いっぱいに */
+  text-decoration: none;
+  /* 下線を消す */
+  color: white;
+  /* リンクの色 */
+  padding: 10px 0;
+  /* 上下のパディング */
+  border-bottom: 1px solid white;
+  /* 下に白い線を引く */
+  font-size: 20px;
+  /* フォントサイズ */
+  transition: background-color 0.3s;
+  /* 背景色の変化にアニメーションを設定 */
 }
 
 .nav-menu a:last-child {
-  border-bottom: none; /* 最後のリンクの下線を消す */
+  border-bottom: none;
+  /* 最後のリンクの下線を消す */
 }
 
 .nav-menu a:hover {
-  background-color: #333; 
+  background-color: #333;
 }
 
 .close-button {
@@ -459,9 +483,3 @@ li {
   cursor: pointer;
   color: white;
 }
-
-
-
-
-
-
