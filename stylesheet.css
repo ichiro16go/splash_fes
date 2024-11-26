@@ -1,26 +1,28 @@
-/* 不要なスタイルを削除しました */
-/* @font-faceの定義はそのままにしています */
-
 @font-face {
   font-family: "paint_ball";
-  src: url('./font/Paintball_Beta_3.ttf')format("truetype");
+  src: url('./font/Paintball_Beta_3.ttf') format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "ikamodoki";
-  src: url('./font/ikamodoki1_0.ttf')format("truetype");
+  src: url('./font/ikamodoki1_0.ttf') format("truetype");
   font-display: swap;
 }
 
 @font-face {
   font-family: "ikanji";
-  src: url('./font/ab3ec448c2439eaed33fcf7f31b70b33.woff2')format("truetype");
+  src: url('./font/ab3ec448c2439eaed33fcf7f31b70b33.woff2') format("truetype");
   font-display: swap;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -33,60 +35,8 @@ a {
   margin: 0 auto;
 }
 
-
-
 .ikagana {
   font-family: "ikamodoki", "ikanji", "paint_ball";
-}
-
-.top-wrapper {
-  position: relative;
-  padding: 180px 0 100px 0;
-  background-image: url('./assets/黒テーマ.webp');
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-.top-wrapper:before {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-.btn-wrapper {
-  text-align: center;
-  position: relative;
-  z-index: 100;
-}
-
-.signup {
-  background-color: #ff3edc;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.9;
-  border-radius: 4px;
-  text-align: center;
-  width: 250px;
-  height: auto;
-  font-size: 30px;
-}
-
-.btn:hover {
-  opacity: 1;
 }
 
 header {
@@ -97,52 +47,18 @@ header {
   top: 0;
   z-index: 10;
   display: flex;
-  /* フレックスボックスを使用 */
   justify-content: space-between;
-  /* 左右に要素を配置 */
   align-items: center;
-  /* 垂直方向に中央揃え */
   padding: 0 15px;
-  /* 左右のパディングを追加 */
 }
 
 .header-right {
-  /* 新しいクラスを追加 */
   display: flex;
-  /* フレックスボックスを使用 */
   gap: 10px;
-  /* ボタン間のスペース */
   margin-left: auto;
-  /* 右側に寄せるためのマージン */
   position: absolute;
   top: 10px;
   right: 10px;
-}
-
-.social-button {
-  /* ソーシャルボタンのスタイル */
-  color: white;
-  /* ボタンの色 */
-  font-size: 25px;
-  /* ボタンのフォントサイズ */
-  text-decoration: none;
-  /* 下線を削除 */
-  padding: 10px;
-  /* パディンを追加 */
-  transition: color 0.3s;
-  /* ホバー時の色変更にトランジションを追加 */
-}
-
-.social-button:hover {
-  /* ホバー時のスタイル */
-  color: #ff3edc;
-  /* デフォルトのホバー時の色 */
-}
-
-/* Twitterボタンのホバー時の色を指定 */
-.social-button.fa-twitter:hover {
-  color: rgb(70, 241, 255);
-  /* Twitterボタンのホバー時の色 */
 }
 
 body .menu-icon {
@@ -153,254 +69,6 @@ body .menu-icon {
   display: none;
 }
 
-.content-wrapper {
-  padding: 50px;
-  background-color: rgba(57, 57, 57, 0.9);
-  /* 背景を黒に変更 */
-  color: rgb(255, 255, 255);
-  /* 文字色を白に変更 */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 20px 10% 0 10%;
-}
-
-.social-icons {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.social-icons a {
-  color: rgb(255, 255, 255);
-  /* アイコンの色を黒に変更 */
-  font-size: 30px;
-  margin: 0 10px;
-}
-
-.social-icons a:hover {
-  color: #ff3edc;
-  /* Hover color */
-}
-
-.social-icon {
-  width: 30px;
-  /* アイコンのサイズを統一 */
-  height: auto;
-  /* アスペクト比を維持 */
-}
-
-.background-image {
-  background-image: url('./assets/background.png');
-  background-repeat: repeat;
-}
-
-
-.highlight_pink {
-  color: rgb(255, 35, 207);
-}
-
-.highlight_cyan {
-  color: rgb(70, 241, 255);
-}
-
-.highlight_yellow {
-  color: rgb(255, 248, 59);
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.9);
-  /* 背景を白に変更 */
-  color: rgb(255, 255, 255);
-  /* 文字色を黒に変更 */
-  padding: 20px 0;
-  /* パディングを追加 */
-}
-
-body {
-  margin: 0;
-  /* マージンをリセット */
-  padding: 0;
-  /* パディングをリセット */
-}
-
-.content-wrapper a:link {
-  color: rgb(70, 241, 255);
-  text-decoration: underline;
-}
-
-.content-wrapper a:visited {
-  color: rgb(255, 35, 207);
-  text-decoration: underline;
-}
-
-.top-wrapper h1 {
-  opacity: 0.9;
-  font-size: 100px;
-  letter-spacing: 5px;
-}
-
-.top-wrapper p {
-  opacity: 0.9;
-  font-size: 50px;
-  margin-bottom: 40px;
-}
-
-h2 {
-  font-size: 50px;
-}
-
-p,
-li {
-  font-size: 30px;
-}
-
-.content-image {
-  width: auto;
-  height: 500px;
-  align-items: center;
-}
-
-.header-text {
-  font-family: "paint_ball";
-  color: #eee;
-  font-size: 50px;
-}
-
-.description {
-  font-size: 22px;
-  /* 文字サイズを調整 */
-  line-height: 1.5;
-  /* 行間を調整 */
-  margin: 10px 0;
-  /* 上下のマージンを追加 */
-  opacity: 0.85;
-}
-
-.calucel_item video {
-  width: 100%; /* 親の幅に合わせる */
-  height: auto; /* アスペクト比を維持 */
-}
-
-.calucel_item img {
-  width: 100%; /* 親の幅に合わせる */
-  height: auto; /* アスペクト比を維持 */
-}
-.calucel_container {
-  display: flex;
-  overflow-x: auto; /* 横スクロールを有効にする */
-  scroll-snap-type: x mandatory; /* スクロールスナップを有効にする */
-}
-
-.calucel_item {
-  flex: 0 0 auto; /* アイテムを横に並べる */
-  scroll-snap-align: start; /* スクロールスナップの位置を設定 */
-  width: 100%; /* 各アイテムの幅を設定 */
-  box-sizing: border-box; /* ボックスサイズを調整 */
-  padding: 10px; /* アイテム間のスペース */
-}
-
-.calucel_container::-webkit-scrollbar {
-  width: 10px; /* スクロールバーの幅 */
-  height: 10px; /* スクロールバーの高さ */
-}
-
-.calucel_container::-webkit-scrollbar-thumb {
-  background-color: #f80af0; /* スクロールバーの色 */
-  border-radius: 10px; /* 丸みをつける */
-  border: 3px solid #000000; /* 外側の色 */
-}
-
-.calucel_container::-webkit-scrollbar-track {
-  background-color: #000000; /* トラックの色 */
-  border-radius: 10px; /* 丸みをつける */
-}
-
-/* スマホ用のフォントサイズを設定 */
-@media (max-width: 768px) {
-  .top-wrapper h1 {
-    opacity: 0.9;
-    font-size: 60px;
-    letter-spacing: 5px;
-  }
-
-  .top-wrapper p {
-    opacity: 0.9;
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
-
-  h2 {
-    font-size: 30px;
-    /* スマホでのh2のフォントサイズ */
-  }
-
-  p,
-  li {
-    font-size: 20px;
-    /* スマホでのpのフォントサイズ */
-  }
-
-  .content-wrapper {
-    padding: 10px;
-    background-color: rgba(57, 57, 57, 0.9);
-    /* 背景を黒に変更 */
-    color: rgb(255, 255, 255);
-    /* 文字色を白に変更 */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 10px 3% 0 3%;
-  }
-
-  .content-image {
-    width: 90%;
-    height: auto;
-    align-items: center;
-  }
-
-  .header-text {
-    font-family: "paint_ball";
-    color: #eee;
-    font-size: 25px;
-  }
-
-  .description {
-    font-size: 18px;
-    /* 文字サイズを調整 */
-    line-height: 1.5;
-    /* 行間を調整 */
-    margin: 10px 0;
-    /* 上下のマージンを追加 */
-    opacity: 0.75;
-  }
-
-  .btn-wrapper {
-    z-index: 100;
-  }
-
-  .signup{
-    z-index: 110;
-  }
-
-}
-
-.image-wrapper {
-  display: flex;
-  /* フレックスボックスを使用 */
-  justify-content: center;
-  /* 中央揃え */
-  margin: 10px 0;
-  /* 上下のマージンを追加 */
-}
-
-.content-image {
-  width: 45%;
-  /* 幅を調整 */
-  height: auto;
-  /* アスペクト比を維持 */
-  margin: 0 2.5%;
-  /* 左右のマージンを追加 */
-}
-
-/* ハンバーガーメニューのスタイルを追加 */
 .hamburger {
   display: flex;
   align-items: center;
@@ -434,34 +102,291 @@ li {
 }
 
 .nav-menu a {
-  display: block; /* リンクをブロック要素にして幅いっぱいに */
-  text-decoration: none; /* 下線を消す */
-  color: white; /* リンクの色 */
-  padding: 10px 0; /* 上下のパディング */
-  border-bottom: 1px solid white; /* 下に白い線を引く */
-  font-size: 20px; /* フォントサイズ */
-  transition: background-color 0.3s; /* 背景色の変化にアニメーションを設定 */
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  transition: background-color 0.3s;
 }
 
 .nav-menu a:last-child {
-  border-bottom: none; /* 最後のリンクの下線を消す */
+  border-bottom: none;
 }
 
 .nav-menu a:hover {
-  background-color: #333; 
+  background-color: #333;
 }
 
-.close-button {
+.top-wrapper {
+  position: relative;
+  padding: 180px 0 100px 0;
+  background-image: url('./assets/黒テーマ.webp');
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.top-wrapper:before {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 100px;
+  letter-spacing: 5px;
+}
 
+.top-wrapper p {
+  opacity: 0.9;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
 
+.content-wrapper {
+  padding: 50px;
+  background-color: rgba(57, 57, 57, 0.9);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 10% 0 10%;
+}
 
+.content-wrapper a:link {
+  color: rgb(70, 241, 255);
+  text-decoration: underline;
+}
 
+.content-wrapper a:visited {
+  color: rgb(255, 35, 207);
+  text-decoration: underline;
+}
 
+.content-image {
+  width: auto;
+  height: 500px;
+  align-items: center;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.content-image {
+  width: 45%;
+  height: auto;
+  margin: 0 2.5%;
+}
+
+.btn-wrapper {
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+.signup {
+  background-color: #ff3edc;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.9;
+  border-radius: 4px;
+  text-align: center;
+  width: 250px;
+  height: auto;
+  font-size: 30px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.social-button {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.social-button:hover {
+  color: #ff3edc;
+}
+
+.social-button.fa-twitter:hover {
+  color: rgb(70, 241, 255);
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: #ff3edc;
+}
+
+.social-icon {
+  width: 30px;
+  height: auto;
+}
+
+.background-image {
+  background-image: url('./assets/background.png');
+  background-repeat: repeat;
+}
+
+.highlight_pink {
+  color: rgb(255, 35, 207);
+}
+
+.highlight_cyan {
+  color: rgb(70, 241, 255);
+}
+
+.highlight_yellow {
+  color: rgb(255, 248, 59);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 255, 255);
+  padding: 20px 0;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p,
+li {
+  font-size: 30px;
+}
+
+.header-text {
+  font-family: "paint_ball";
+  color: #eee;
+  font-size: 50px;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 10px 0;
+  opacity: 0.85;
+}
+
+.calucel_item video,
+.calucel_item img {
+  width: 100%;
+  height: auto;
+}
+
+.calucel_container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.calucel_item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.calucel_container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.calucel_container::-webkit-scrollbar-thumb {
+  background-color: #f80af0;
+  border-radius: 10px;
+  border: 3px solid #000000;
+}
+
+.calucel_container::-webkit-scrollbar-track {
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .top-wrapper h1 {
+    opacity: 0.9;
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+
+  .top-wrapper p {
+    opacity: 0.9;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p,
+  li {
+    font-size: 20px;
+  }
+
+  .content-wrapper {
+    padding: 10px;
+    background-color: rgba(57, 57, 57, 0.9);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 3% 0 3%;
+  }
+
+  .content-image {
+    width: 90%;
+    height: auto;
+    align-items: center;
+  }
+
+  .header-text {
+    font-family: "paint_ball";
+    color: #eee;
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 0;
+    opacity: 0.75;
+  }
+
+  .btn-wrapper {
+    z-index: 100;
+  }
+
+  .signup {
+    z-index: 110;
+  }
+}
